@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 1</title>
+    <style>
+      img {
+        float: left;
+        margin: 20px;
+        height: 150px;
+      }
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        background-color: lightgray;
+        text-align: center;
+        color: slateblue;
+      }
+      h3 {
+        font-family: cursive;
+        color: blueviolet;
+        text-align: center;
+        outline: 5px dotted lightblue;
+      }
+      h2 {
+        font-family: "Montserrat", sans-serif;
+        color: violet;
+        text-align: left;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        text-indent: 30px;
+      }
+      body {
+        background-color: beige;
+      }
+      h2,
+      h3,
+      p {
+        margin-left: 120px;
+        margin-right: 120px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      .wait {
+        cursor: wait;
+        /* I learned it from W3School. The cursor property specifies the mouse cursor to be displayed when pointing over an element. reference: https://www.w3schools.com/cssref/pr_class_cursor.php */
+      }
+
+      nav,
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lavender;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      li.dropdown {
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .name {
+        padding-right: 40vw;
+        font-weight: bold;
+      }
+      li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="name">Yu Xia</li>
+        <li class="link"><a href="#intro">About Me</a></li>
+        <li class="link"><a href="#interest">My Interests</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+        <li class="link"><a href="sitemap.html">Portfolio</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Homework 2</a>
+          <div class="dropdown-content">
+            <a href="hw2-1.html">hw2-1</a>
+            <a href="hw2-2.html">hw2-2</a>
+            <a href="hw2-3.html">hw2-3</a>
+            <a href="hw2-4.html">hw2-4</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+    <h2 class="wait">About Me</h2>
+    <p>
+      <img src="image/selfie.jpg" alt="A Picture of Yu Xia" />My name is Yu Xia,
+      and I was born and raised in Ningbo, China. I am currently a senior at
+      Babson College concentrating in Business Analytics. As of extracurricular
+      activities, I have been a part of TEDxBabsonCollege since 2021, and I am
+      the head of the marketing department for this year's TEDxBabsonCollege,
+      which will be taken place in the Knight Auditoriun on March 25th.
+    </p>
+
+    <p>
+      I chose <a href="https://www.babson.edu">Babson College</a> because it is
+      a very good business school, and I want to go to a school with small class
+      size. In addition, Babson College is close to Boston which provided
+      various opportunities for internships and jobs. I am applyting to deferred
+      MBA program in hope of having 2-5 years to work. As for now, I am planning
+      to work for ClinEco.Inc, a Cambridge Healthtech Institute, which I have
+      been working for since spring 2022.
+    </p>
+    <h2 id="interest">My Interests</h2>
+    <p>
+      <img src="image/cafe.jpg" alt="A Picture of the Cafe by a Cliff" /> My
+      interests are visiting Cafes and drinking coffee. Although I like to try
+      new coffee drinks, my go-to order is
+      <a href="https://bluebottlecoffee.com/us/eng/brew-guides/pour-over"
+        >pourover</a
+      >
+      with Ethiopian &amp; Columbian beans. Since I also like to travel, I like
+      to explore new cafes in different cities with friends. Over the winter
+      break, I traveled to Thailand with my friends, and we visited a Cafe by a
+      cliff. In addition, we are planning to visist Norway and Iceland for the
+      upcoming spring break. Growing up, my parents have taken me to different
+      places in the world which have influenced me to have interests in
+      traveling to different places and experiencing different cultural
+      landscapes.
+    </p>
+    <hr />
+    <h3 id="contact">Contact Information</h3>
+    <p>
+      <br />
+      Yu Xia, Web Technologies
+      <br />
+      <a href="mailto:yxia1@babson.edu">Email</a>
+      <br />
+      <a href="https://github.com/yxia1">GitHub</a>
+      <br />
+      <a href="sitemap.html">Sitemap</a>
+    </p>
+    <footer>&#169;2023 Xia</footer>
+    <!-- The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents. I learned it from MDN Web Docs.
+    Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer -->
+  </body>
+</html>
