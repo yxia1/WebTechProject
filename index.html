@@ -10,16 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 1</title>
     <style>
-      img {
-        float: left;
-        margin: 20px;
-        height: 150px;
-      }
 
       video{
         width: 100vw;
         position: relative;
-        top: -50px;
+        top: -90px;
         z-index: -1;
       }
 
@@ -35,7 +30,9 @@
         /* I learned it from W3School. The cursor property specifies the mouse cursor to be displayed when pointing over an element. reference: https://www.w3schools.com/cssref/pr_class_cursor.php */
       }
       nav{
-        width: 100vw;
+        position: fixed;
+        top: 0;
+        width: 100%;
       }
 
       nav,
@@ -104,6 +101,15 @@
         color:#f1f1f1;
         font-size: 200%;
       }
+
+      .btn  {
+        display: inline-block;
+        padding: 10px 40px;
+        background: none;
+        border: solid #f1f1f1 1px;
+        color: #f1f1f1;
+        font-size: 0.5em;
+      }
     </style>
   </head>
   <body>
@@ -123,10 +129,12 @@
       </ul>
     </nav>
     <div>
-    <video src="images/bg.mp4" type="video/mp4" autoplay></video>
+    <video src="images/bg.mp4" type="video/mp4" autoplay muted loop></video>
     <div class="text-content">
       <h3>Voyages of Carrie</h3>
-      <button>Start</button>
+      <button class="btn">
+        START
+      </button>
     </div>
   </div>
     <hr />
