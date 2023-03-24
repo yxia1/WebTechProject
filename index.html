@@ -6,27 +6,31 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Homepage</title>
     <style>
-      video{
+      video {
         width: 100%;
       }
-      img{
+      img {
         width: 100%;
-      }
-
-      body {
-        font-family: "Montserrat", sans-serif;
       }
 
       a {
         text-decoration: none;
-        color: black;
+        color: #222222;
       }
-     /* Navigation Bar */
-      nav{
+      a:hover {
+        color: #7a8487;
+      }
+      /* Navigation Bar */
+      nav {
         position: fixed;
         top: 0;
         width: 100%;
@@ -59,10 +63,6 @@
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
       }
-      .name {
-        padding-right: 50vw;
-        font-weight: bold;
-      }
       li.dropdown {
         display: inline-block;
       }
@@ -91,21 +91,22 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
+
       /* Title */
-      .text-content{
+      .text-content {
         position: absolute;
-        color:#f1f1f1;
+        color: #f1f1f1;
         font-size: 200%;
       }
-      .title  {
+      .title {
         position: relative;
         top: -30vh;
         margin-bottom: -30vh;
         right: -5vw;
       }
-  
+
       /* button */
-      .btn  {
+      .btn {
         display: inline-block;
         padding: 10px 40px;
         background: none;
@@ -113,10 +114,8 @@
         color: #f1f1f1;
         font-size: 0.5em;
       }
-      .container2{
+      #container2 {
         display: inline-block;
-
-
       }
       /* #norway-pic{
         position: relative;
@@ -132,18 +131,15 @@
         opacity: 0;
         color: #f1f1f1;
         transition: opacity 0.5s ease;
-        padding-top:150vh;
+        padding-top: 150vh;
       }
 
-
-      .container2:hover .text-overlay {
+      #container2:hover .text-overlay {
         opacity: 1;
       }
 
-      .container3{
+      .container3 {
         display: inline-block;
-
-
       }
       /* #norway-pic{
         position: relative;
@@ -159,67 +155,85 @@
         opacity: 0;
         color: #f1f1f1;
         transition: opacity 0.5s ease;
-        padding-top:300vh;
+        padding-top: 300vh;
       }
-
 
       .container3:hover .text-overlay2 {
         opacity: 1;
       }
-      
+
+      .footer {
+        text-align: center;
+      }
+      footer {
+        font-size: smaller;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .logo{
+        width: 36px;
+      }
+
+      .name{
+        padding-right: 50vw;
+      }
+      #logo{
+        color: #183059;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li class="name">Yu Xia</li>
+        <li class="logo"><img src="android-chrome-512x512.png" alt="logo" class="logo"></li>
+        <li class="name"></span><a href="/index.html"> <span id="logo">VOYAGES OF CARRIE</span></a></li>
         <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Voyages</a>
+          <a href="javascript:void(0)" class="dropbtn">CHAPTERS</a>
           <div class="dropdown-content">
-            <a href="norway.html">Norway</a>
-            <a href="iceland.html">Iceland</a>
+            <a href="norway.html">NORWAY</a>
+            <a href="iceland.html">ICELAND</a>
             <!-- <a href="thailand.html">Thailand</a> -->
           </div>
         </li>
-        <li class="link"><a href="#contact">Contact</a></li>
-        <li class="link"><a href="sitemap.html">About</a></li>
+        <li class="link"><a href="#contact">CONTACT</a></li>
+        <li class="link"><a href="sitemap.html">ABOUT</a></li>
       </ul>
     </nav>
-    <div class="container1">
-    <video src="images/bg.mp4" type="video/mp4" autoplay muted loop></video>
-    <div class="text-content">
-      <div class="title">
-      <p>VOYAGES OF CARRIE</p>
-      <button class="btn">
-        START
-      </button>
+    <div id="container1">
+      <video src="images/bg.mp4" type="video/mp4" autoplay muted loop></video>
+      <div class="text-content">
+        <div class="title">
+          <p>VOYAGES OF CARRIE</p>
+          <a href="#container2"><button class="btn">START</button></a>
+        </div>
+      </div>
     </div>
+    <a href="norway.html"
+      ><div id="container2">
+        <img src="images/norway.jpg" alt="image-of-norway" id="norway-pic" />
+        <div class="text-overlay">
+          <p>NORWAY</p>
+        </div>
+      </div></a
+    >
+    <a href="iceland.html"
+      ><div class="container3">
+        <img src="images/iceland.jpg" alt="image-of-iceland" id="iceland-pic" />
+        <div class="text-overlay2">
+          <p>ICELAND</p>
+        </div>
+      </div></a
+    >
+    <div class="footer">
+      <hr />
+      <div><a href="#container1">Voyages of Carrie</div></a>
+      <div><a href="mailto:yxia1@babson.edu">Email</a></div>
+      <div><a href="https://github.com/yxia1">GitHub</a></div>
+      <div><a href="sitemap.html">Sitemap</a></div>
+      <footer>&#169;2023 Xia</footer>
     </div>
-    </div>
-<a href="norway.html"><div class="container2">
-  <img src="images/norway.jpg" alt="image-of-norway" id="norway-pic">
-  <div class="text-overlay">
-    <p>NORWAY</p>
-  </div>
-</div></a>
-<a href="iceland.html"><div class="container3">
-  <img src="images/iceland.jpg" alt="image-of-iceland" id="iceland-pic">
-  <div class="text-overlay2">
-    <p>ICELAND</p>
-  </div>
-</div></a>
-  <div class="footer">
-    <hr />
-      <br />
-      Yu Xia, Web Technologies
-      <br />
-      <a href="mailto:yxia1@babson.edu">Email</a>
-      <br />
-      <a href="https://github.com/yxia1">GitHub</a>
-      <br />
-      <a href="sitemap.html">Sitemap</a>
-    </p>
-    <footer>&#169;2023 Xia</footer>
-  </div>
   </body>
 </html>
