@@ -14,12 +14,6 @@
         text-decoration: none;
         color: black;
       }
-      nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-
       nav,
       ul {
         display: flex;
@@ -35,6 +29,17 @@
         padding-left: 10px;
         padding-right: 10px;
       }
+      .logo{
+        width: 36px;
+      }
+
+      .name{
+        padding-right: 50vw;
+      }
+      #logo{
+        color: #183059;
+        font-weight: bold;
+      }
       li.dropdown {
         display: inline-block;
       }
@@ -45,10 +50,6 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-      }
-      .name {
-        padding-right: 50vw;
-        font-weight: bold;
       }
       li.dropdown {
         display: inline-block;
@@ -78,36 +79,50 @@
       .dropdown:hover .dropdown-content {
         display: block;
       }
+      .footer {
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      footer {
+        font-size: smaller;
+      }
       body {
         font-family: "Montserrat", sans-serif;
       }
       h1 {
-        padding-top: 50vh;
         text-align: center;
+        color: #183059;
       }
       p {
         text-align: center;
         padding-left: 15vw;
         padding-right: 15vw;
+        color: #111111;
+      }
+      .logo_image{
+        padding-left: 40%;
+        padding-right:  40%;
+        padding-top: 10%;
       }
     </style>
   </head>
   <body>
     <nav>
-      <ul>
-        <li class="name">Yu Xia</li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Voyages</a>
-          <div class="dropdown-content">
-            <a href="norway.html">Norway</a>
-            <a href="iceland.html">Iceland</a>
-            <!-- <a href="thailand.html">Thailand</a> -->
-          </div>
-        </li>
-        <li class="link"><a href="#contact">Contact</a></li>
-        <li class="link"><a href="sitemap.html">About</a></li>
-      </ul>
-    </nav>
+        <ul>
+          <li class="logo"><img src="android-chrome-512x512.png" alt="logo" class="logo"></li>
+          <li class="name"></span><a href="/index.html"> <span id="logo">VOYAGES OF CARRIE</span></a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">CHAPTERS</a>
+            <div class="dropdown-content">
+              <a href="norway.html">NORWAY</a>
+              <a href="iceland.html">ICELAND</a>
+            </div>
+          </li>
+          <li class="link"><a href="contact.html">CONTACT</a></li>
+          <li class="link"><a href="sitemap.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    <img src="android-chrome-192x192.png" alt="logo" class="logo_image">
     <h1>ABOUT VOYAGES OF CARRIE</h1>
     <p>
       Travelling has always been my biggest passion. There's just something
@@ -124,17 +139,12 @@
       them.
     </p>
     <div class="footer">
-        <hr />
-          <br />
-          Yu Xia, Web Technologies
-          <br />
-          <a href="mailto:yxia1@babson.edu">Email</a>
-          <br />
-          <a href="https://github.com/yxia1">GitHub</a>
-          <br />
-          <a href="sitemap.html">Sitemap</a>
-        </p>
-        <footer>&#169;2023 Xia</footer>
-      </div>
+      <hr />
+      <div><a href="index.html">Voyages of Carrie</div></a>
+      <div><a href="mailto:yxia1@babson.edu">Email</a></div>
+      <div><a href="https://github.com/yxia1">GitHub</a></div>
+      <div><a href="sitemap.html">Sitemap</a></div>
+      <footer>&#169;2023 Xia</footer>
+    </div>
   </body>
 </html>
