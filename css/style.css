@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+a:hover {
+  color: #7a8487;
+}
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+nav,
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f1f1;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* home section */
+.home-text-content {
+  position: absolute;
+  color: #f1f1f1;
+  font-size: 200%;
+}
+.home-title {
+  position: relative;
+  top: -30vh;
+  margin-bottom: -30vh;
+  right: -5vw;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 10px 40px;
+  background: none;
+  border: solid #f1f1f1 1px;
+  color: #f1f1f1;
+  font-size: 0.5em;
+}
+#container2 {
+  display: inline-block;
+}
+/* #norway-pic{
+  position: relative;
+  top: -35vh;
+  z-index: -2;
+  margin-bottom: -35vh;
+} */
+.text-overlay {
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  left: 33%;
+  opacity: 0;
+  color: #f1f1f1;
+  transition: opacity 0.5s ease;
+  padding-top: 150vh;
+}
+
+#container2:hover .text-overlay {
+  opacity: 1;
+}
+
+.container3 {
+  display: inline-block;
+}
+/* #norway-pic{
+  position: relative;
+  top: -35vh;
+  z-index: -2;
+  margin-bottom: -35vh;
+} */
+.text-overlay2 {
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  opacity: 0;
+  color: #f1f1f1;
+  transition: opacity 0.5s ease;
+  padding-top: 300vh;
+}
+
+.container3:hover .text-overlay2 {
+  opacity: 1;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+footer {
+  font-size: smaller;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  width: 36px;
+}
+
+.name {
+  padding-right: 50vw;
+}
+#logo {
+  color: #183059;
+  font-weight: bold;
+}
+
+.cover-image {
+  position: relative;
+  top: -45vh;
+  z-index: -1;
+  margin-bottom: -45vh;
+}
+
+.page-text-content {
+  position: relative;
+  color: #f1f1f1;
+  font-size: 200%;
+  text-align: center;
+  top: -50vh;
+  margin-bottom: -50vh;
+  padding-bottom: 18vh;
+}
+.content-page-title {
+  text-align: center;
+}
+
+.btn:hover {
+  color: #183059;
+  border: solid #183059 2px;
+  background-color: #f1f1f1;
+}
+
+.text {
+  padding-bottom: 2em;
+}
+.row-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img {
+  width: 5em;
+}
+.container-box {
+  border: 1px solid #f0eded;
+  padding: 50px 10px;
+  border-radius: 4px;
+}
+
+.container {
+  padding: 80px 18%;
+}
+
+.container-box:hover {
+  box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+  border: 1px solid transparent;
+  transform: translateY(-0.5rem);
+  transition-duration: 500ms;
+  /* reference:  */
+}
