@@ -186,7 +186,7 @@ body {
   border: 1px solid transparent;
   transform: translateY(-0.5rem);
   transition-duration: 500ms;
-  /* reference:  */
+  /* reference: https://www.youtube.com/watch?v=V7Xz2ZEwqXs */
 }
 
 /* Cover Section */
@@ -224,13 +224,24 @@ body {
   width: 100%;
 }
 
-.wrapper .cards_wrap {
+.cards_wrap {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+/* .wrapper .cards_wrap {
   display: flex;
   flex-wrap: wrap;
+} */
+@media (max-width: 1000px) {
+  .cards_wrap {
+    grid-template-columns: auto;
+  }
 }
-
 .cards_wrap .card_item {
-  width: 50%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -267,7 +278,7 @@ body {
   border: 1px solid transparent;
   transform: translateY(-0.5rem);
   transition-duration: 500ms;
-  /* reference:  */
+  /* reference:  https://github.com/codingmarket07/Responsive-Cards-UI-Design*/
 }
 
 .slideshow {
