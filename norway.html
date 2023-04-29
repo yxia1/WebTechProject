@@ -2,132 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Norway</title>
-    <style>
-
-      #container2{
-        display: grid;
-        justify-content: stretch;
-        align-content: stretch;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(width 20vw);
-        grid-template-areas:
-          "pic-1 pic-2"
-          "pic-3 pic-4"
-;
-      }
-
-      .item{
-        padding: 80px 100px;
-      }
-
-      .item-1{
-        grid-area: pic-1;
-      }
-      .item-2{
-        grid-area: pic-2;
-      }
-      .item-3{
-        grid-area: pic-3;
-      }
-      .item-4{
-        grid-area: pic-4;
-      }
-
-      .image-container {
-        position: relative;
-      }
-
-      .text-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-        color: #111111;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-      }
-
-      h3 {
-        font-size: 200%;
-
-      }
-      .image-container:hover .text-overlay{
-        opacity: 1;
-      }
-
-      .image-container2 {
-        position: relative;
-      }
-
-      .text-overlay2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-        color: #111111;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-
-      }
-
-      .image-container2:hover .text-overlay2{
-        opacity: 1;
-      }
-
-      .image-container3 {
-        position: relative;
-      }
-
-      .text-overlay3 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-        color: #111111;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-
-      }
-
-      .image-container3:hover .text-overlay3{
-        opacity: 1;
-      }
-      .image-container4 {
-        position: relative;
-      }
-
-      .text-overlay4 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-        color: #111111;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-
-      }
-
-      .image-container4:hover .text-overlay4{
-        opacity: 1;
-      }
-
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iceland</title>
   </head>
   <nav>
     <ul>
@@ -138,62 +24,113 @@
         <div class="dropdown-content">
           <a href="norway.html">NORWAY</a>
           <a href="iceland.html">ICELAND</a>
+          <a href="germany.html">GERMANY</a>
+          <!-- <a href="thailand.html">Thailand</a> -->
         </div>
       </li>
       <li class="link"><a href="contact.html">CONTACT</a></li>
       <li class="link"><a href="about.html">ABOUT</a></li>
     </ul>
   </nav>
-  <div calss="container1">
-      <img src="images/norway.jpg" alt="norway-cover" class="cover-image">
-      <div class="page-text-content">
-        <div class="content-page-title">
-          <h1>NORWAY</h1>
+
+    <!-- Cover Section -->
+    <section class="cover" id="cover">
+            <img src="images/norway.jpg" alt="norway_cover">
+            <div class="cover-text-content">
+                <div class="cover-title">
+                  <h1>VOYAGE TO NORWAY</h1>
+                </div>
+            </div>
+    </section>
+  
+    <!-- Cards Section -->
+    <section class="cards" id="cards">
+        <div class="title">
+            <h1>Places to Explore</h1>
         </div>
-        <div><a href="#container2"><button class="btn">EXPLORE</button></a></div>
-      </div>
-  </div>
-  <div id="container2">
-      <div class="item item-1">
-        <div class="image-container">
-        <a href="https://www.norwaynutshell.com/original-tour/?gclid=Cj0KCQjwlPWgBhDHARIsAH2xdNcQBMty9zbbVYqS5PFlO8qbGTVZfgBgu9kK6NfY8_M0uHX156g0exIaAi8jEALw_wcB&gclsrc=aw.ds"><img src="images/norway-1.jpg" alt="Flam-Station"></a> 
-        <div class="text-overlay">
-          <h3>TOUR</h3>
+<div class="wrapper">
+    <div class="cards_wrap">
+        <div class="card_item"><a href="https://www.norwaynutshell.com/original-tour/?gclid=Cj0KCQjwlPWgBhDHARIsAH2xdNcQBMty9zbbVYqS5PFlO8qbGTVZfgBgu9kK6NfY8_M0uHX156g0exIaAi8jEALw_wcB&gclsrc=aw.ds">
+            <div class="card_inner">
+                <div class="card_top">
+                    <img src="images/norway-1.jpg" alt="Flam_Station">
+                </div>
+                <div class="card_bottom">
+                    <div class="card_category">
+                    </div>
+                    <div class="card_info">
+                        <p class="card_title">
+                            Tour
+                        </p>
+                        <p>Don't Have Time? Take Norway in a nutshell® Tour</p>
+                    </div>
+                </div>
+            </div></a>
         </div>
-      </div>
-      </div>
-    <div class="image-container2">
-      <div class="item item-2">
-       <a href="https://www.tripadvisor.com/Tourism-g190502-Bergen_Hordaland_Western_Norway-Vacations.html"><img src="images/norway-2.jpg" alt="Bergen"></a>
-        <div class="text-overlay2">
-          <h3>BERGEN</h3>
-        </div>
-      </div>
+        <div class="card_item"><a href="https://www.tripadvisor.com/Tourism-g190502-Bergen_Hordaland_Western_Norway-Vacations.html">
+            <div class="card_inner">
+                <div class="card_top">
+                    <img src="images/norway-2.jpg" alt="blue_lagoon">
+                </div>
+                <div class="card_bottom">
+                    <div class="card_category">
+                    </div>
+                    <div class="card_info">
+                        <p class="card_title">
+                            Bergen
+                        </p>
+                        <p>Places to visit in the City of Bergen</p>
+                    </div>
+                </div>
+            </div>
+        </a></div>
+        <div class="card_item"><a href="https://fuglen.no/" alt="Diamond-Beach">
+            <div class="card_inner">
+                <div class="card_top">
+                    <img src="images/norway-3.jpg" alt="fuglen_cafe">
+                </div>
+                <div class="card_bottom">
+                    <div class="card_category">
+                    </div>
+                    <div class="card_info">
+                        <p class="card_title">
+                            Cafe
+                        </p>
+                        <p>The Best Coffee Praised by the NY Times</p>
+                    </div>
+                </div>
+            </div>
+        </a></div>
+        <div class="card_item"><a href="https://www.visitnorway.com/places-to-go/eastern-norway/oslo/">
+            <div class="card_inner">
+                <div class="card_top">
+                    <img src="images/norway-4.jpg" alt="oslo">
+                </div>
+                <div class="card_bottom">
+                    <div class="card_category">
+                    </div>
+                    <div class="card_info">
+                        <p class="card_title">
+                            Oslo
+                        </p>
+                        <p>Discover the Vibrant Capital of Norway, Oslo</p>
+                    </div>
+                </div>
+            </div>
+        </a></div>
     </div>
-    <div class="image-container3">
-      <div class="item item-3">
-        <a href="https://fuglen.no/"><img src="images/norway-3.jpg" alt="Cafe"></a>
-        <div class="text-overlay3">
-          <h3>CAFE</h3>
-       </div>
-      </div>
-    </div>
-    <div class="image-container4">
-      <div class="item item-4">
-        <img src="images/norway-4.jpg" alt="">
-        <div class="text-overlay4">
-          <h3>OSLO</h3>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+</section>
+<section class="footer">
     <div class="footer">
-      <hr />
-      <div><a href="index.html">Voyages of Carrie</div></a>
-      <div><a href="mailto:yxia1@babson.edu">Email</a></div>
-      <div><a href="https://github.com/yxia1">GitHub</a></div>
-      <div><a href="sitemap.html">Sitemap</a></div>
-      <footer>&#169;2023 Xia</footer>
+        <hr />
+        <div><a href="#container1">Voyages of Carrie</div></a>
+        <div><a href="mailto:yxia1@babson.edu">Email</a></div>
+        <div><a href="https://github.com/yxia1">GitHub</a></div>
+        <div><a href="sitemap.html">Sitemap</a></div>
+        <footer>&#169;2023 Xia</footer>
     </div>
+      </section>
+    
   </body>
 </html>
