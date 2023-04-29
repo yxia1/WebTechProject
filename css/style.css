@@ -231,15 +231,13 @@ body {
   align-items: center;
   text-align: center;
 }
-/* .wrapper .cards_wrap {
-  display: flex;
-  flex-wrap: wrap;
-} */
+
 @media (max-width: 1000px) {
   .cards_wrap {
     grid-template-columns: auto;
   }
 }
+/* reference: https://stackoverflow.com/questions/65197577/responsive-layout-with-3-items-per-row-on-larger-screens-and-1-item-per-row-on-s */
 .cards_wrap .card_item {
   width: 100%;
   padding: 10px;
